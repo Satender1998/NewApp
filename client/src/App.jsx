@@ -228,6 +228,8 @@ export default function App() {
     fetchStories();
   }, []);
 
+  
+
   if (error) {
     return <div className="text-red-500">{error}</div>;
   }
