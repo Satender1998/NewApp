@@ -121,7 +121,7 @@ const getStoryDetails = async (id) => {
 };
 
 // Top Stories API
-app.get("/topstories", async (req, res) => {
+app.get("/api/topstories", async (req, res) => {
   try {
     const response = await axios.get(
       "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"
@@ -137,7 +137,7 @@ app.get("/topstories", async (req, res) => {
 });
 
 // Best Stories API
-app.get("/beststories", async (req, res) => {
+app.get("/api/beststories", async (req, res) => {
   try {
     const response = await axios.get(
       "https://hacker-news.firebaseio.com/v0/beststories.json?print=pretty"
@@ -153,7 +153,7 @@ app.get("/beststories", async (req, res) => {
 });
 
 // New Stories API
-app.get("/newstories", async (req, res) => {
+app.get("/api/newstories", async (req, res) => {
   try {
     const response = await axios.get(
       "https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty"
