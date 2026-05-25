@@ -150,7 +150,7 @@ app.get("/api/beststories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    console.error("Error fetching best stories:", error.message);
+    console.error("Error fetching bests stories:", error.message);
     sendUpstreamError(res, "best stories");
   }
 });
