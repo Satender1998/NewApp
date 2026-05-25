@@ -12,7 +12,7 @@ Navigation hub for project context.
 
 ## Active Tracks
 
-- [ ] [Loading & Error States for Story Views](./tracks/loading-errors_20260526/index.md) — `loading-errors_20260526`
+- [x] [Loading & Error States for Story Views](./tracks/loading-errors_20260526/index.md) — `loading-errors_20260526`
 
 <!-- Auto-populated by /conductor:new-track -->
 
