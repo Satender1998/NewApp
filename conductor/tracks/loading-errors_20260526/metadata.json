@@ -2,18 +2,20 @@
   "id": "loading-errors_20260526",
   "title": "Loading & Error States for Story Views",
   "type": "feature",
-  "status": "in_progress",
+  "status": "complete",
   "created": "2026-05-26T00:00:00Z",
-  "updated": "2026-05-26T01:10:00Z",
-  "current_phase": 2,
-  "current_task": "2.1",
+  "updated": "2026-05-26T01:30:00Z",
+  "current_phase": 3,
+  "current_task": "3.3",
   "phases": {
     "total": 3,
-    "completed": 1
+    "completed": 3
   },
   "tasks": {
     "total": 9,
-    "completed": 3
+    "completed": 9
   },
-  "commits": []
+  "commits": [
+    "210ca58: feat: return structured JSON errors from story endpoints (loading-errors_20260526)"
+  ]
 }

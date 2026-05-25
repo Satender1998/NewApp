@@ -3,7 +3,7 @@
 **Track ID:** loading-errors_20260526
 **Spec:** [spec.md](./spec.md)
 **Created:** 2026-05-26
-**Status:** [ ] Not Started
+**Status:** [x] Complete
 
 ## Overview
 
@@ -36,13 +36,13 @@ Move the fetch/state logic out of `App.jsx` into a reusable hook.
 
 ### Tasks
 
-- [ ] Task 2.1: Create `client/src/hooks/useStories.js` that fetches the three feeds and returns `{ data: { top, new, best }, loading, error, retry }`.
-- [ ] Task 2.2: Implement combined loading/error handling and a `retry()` that re-runs the fetch.
-- [ ] Task 2.3: Refactor `App.jsx` to consume `useStories`, removing the inline `useEffect`/fetch/`error` state.
+- [x] Task 2.1: Create `client/src/hooks/useStories.js` that fetches the three feeds and returns `{ data: { top, new, best }, loading, error, retry }`.
+- [x] Task 2.2: Implement combined loading/error handling and a `retry()` that re-runs the fetch.
+- [x] Task 2.3: Refactor `App.jsx` to consume `useStories`, removing the inline `useEffect`/fetch/`error` state.
 
 ### Verification
 
-- [ ] App still lists Top/New/Best stories using the hook; `npm run lint` passes in `client/`.
+- [x] App still lists Top/New/Best stories using the hook; `npm run lint` passes in `client/`.
 
 ## Phase 3: Loading, Error & Empty UI
 
@@ -50,20 +50,20 @@ Render the visible states driven by the hook, inside the content area only.
 
 ### Tasks
 
-- [ ] Task 3.1: Add a Tailwind-based skeleton placeholder shown while `loading` is true.
-- [ ] Task 3.2: Render an inline error message with a **Retry** button (wired to `retry()`) in the content area on `error` — do not replace the whole app.
-- [ ] Task 3.3: Ensure a sensible empty state shows when a feed returns no stories.
+- [x] Task 3.1: Add a Tailwind-based skeleton placeholder shown while `loading` is true.
+- [x] Task 3.2: Render an inline error message with a **Retry** button (wired to `retry()`) in the content area on `error` — do not replace the whole app.
+- [x] Task 3.3: Ensure a sensible empty state shows when a feed returns no stories.
 
 ### Verification
 
-- [ ] Loading shows skeletons; a simulated failure shows the inline error + working Retry; an empty feed shows the empty state.
+- [x] Loading shows skeletons; a simulated failure shows the inline error + working Retry; an empty feed shows the empty state.
 
 ## Final Verification
 
-- [ ] All acceptance criteria met (loading skeletons, inline error + retry, backend JSON error codes, empty state)
-- [ ] Tests passing (backend error path, hook)
-- [ ] `npm run lint` passes; client build succeeds
-- [ ] Manual verification of the running app
+- [x] All acceptance criteria met (loading skeletons, inline error + retry, backend JSON error codes, empty state)
+- [x] Tests passing (backend error path via `npm test`; hook verified via manual/runtime checks — no JS test harness in project)
+- [x] `npm run lint` passes; client build succeeds
+- [x] Manual verification of the running app (`/api/welcome` 200, `/api/topstories` returns live stories)
 - [ ] Ready for review
 
 ---
