@@ -41,7 +41,15 @@ The backend exposes `/api/topstories`, `/api/beststories`, `/api/newstories`, an
 - **Render** — a single service runs the Express server, which serves both the API
   and the static client build (`npm run build` builds the client into `client/dist`).
 
+## Testing
+
+- **Backend**: Node's built-in test runner (`node:test`), zero extra dependencies.
+  Test files live alongside source as `*.test.js` and run via `npm test`
+  (`node --test "api/**/*.test.js"`).
+- **Frontend**: no automated test harness yet (would require adding
+  testing-library + jsdom); verified via lint, build, and manual checks.
+
 ## Key Scripts
 
-- Root: `npm run dev` (nodemon), `npm start` (node), `npm run build` (installs deps + builds client).
+- Root: `npm run dev` (nodemon), `npm start` (node), `npm test` (node:test), `npm run build` (installs deps + builds client).
 - Client: `npm run dev` (vite), `npm run build`, `npm run lint`, `npm run preview`.
