@@ -168,6 +168,11 @@ app.get("/api/newstories", async (req, res) => {
   }
 });
 
+// Welcome API
+app.get("/api/welcome", (req, res) => {
+  res.json({ message: "welcome to my new app" });
+});
+
 // Serve static files from the 'client/dist' directory
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
