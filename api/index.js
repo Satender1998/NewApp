@@ -103,6 +103,7 @@ const axios = require("axios");
 const cors = require("cors");
 const path = require("path");
 const dotenv = require("dotenv");
+const { sendUpstreamError } = require("./lib/upstreamError");
 
 dotenv.config();
 
@@ -132,7 +133,8 @@ app.get("/api/topstories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    res.status(500).send("Error fetching top stories");
+    console.error("Error fetching top stories:", error.message);
+    sendUpstreamError(res, "top stories");
   }
 });
 
@@ -148,7 +150,8 @@ app.get("/api/beststories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    res.status(500).send("Error fetching best stories");
+    console.error("Error fetching best stories:", error.message);
+    sendUpstreamError(res, "best stories");
   }
 });
 
@@ -164,7 +167,8 @@ app.get("/api/newstories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    res.status(500).send("Error fetching new stories");
+    console.error("Error fetching new stories:", error.message);
+    sendUpstreamError(res, "new stories");
   }
 });
 
