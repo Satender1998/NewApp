@@ -1,6 +1,6 @@
 # TopStories - Top News Platform
 
-This project is a news application built using Next.js for the frontend and Express.js for the backend. The application displays the top, new, and best stories from Hacker News, using custom APIs to fetch and aggregate the data.
+This project is a news application built using React (with Vite) for the frontend and Express.js for the backend. The application displays the top, new, and best stories from Hacker News, using custom APIs to fetch and aggregate the data.
 
 ## Deployed Link
 ## Website will take sometime to load
@@ -36,9 +36,9 @@ This project is a news application built using Next.js for the frontend and Expr
 ## Technologies Used
 
 ### Frontend
-- **Next.js**: JavaScript framework for building user interfaces.
 - **React**: JavaScript library for building user interfaces.
-- **HTML/CSS**: Basic building blocks for web development.
+- **Vite**: Build tool and dev server for the React frontend.
+- **TailwindCSS**: Utility-first CSS framework for styling.
 - **JavaScript**: Programming language for enhancing user interactivity.
 
 ### Backend
@@ -127,7 +127,7 @@ The project will now be running locally on http://localhost:3001.
 
 ## Summary
 
-This project is a news application built using Next.js for the frontend and Express.js for the backend. The application displays the top, new, and best stories from Hacker News, using custom APIs to fetch and aggregate the data.
+This project is a news application built using React (with Vite) for the frontend and Express.js for the backend. The application displays the top, new, and best stories from Hacker News, using custom APIs to fetch and aggregate the data.
 
 ### Features:
 

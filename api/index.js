@@ -103,6 +103,9 @@ const axios = require("axios");
 const cors = require("cors");
 const path = require("path");
 const dotenv = require("dotenv");
+const { sendUpstreamError } = require("./lib/upstreamError");
+const { heyHandler } = require("./lib/hey");
+const { heyRavinderHandler } = require("./lib/hey-ravinder");
 
 dotenv.config();
 
@@ -132,7 +135,8 @@ app.get("/api/topstories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    res.status(500).send("Error fetching top stories");
+    console.error("Error fetching top stories:", error.message);
+    sendUpstreamError(res, "top stories");
   }
 });
 
@@ -148,7 +152,7 @@ app.get("/api/beststories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    res.status(500).send("Error fetching best stories");
+    sendUpstreamError(res, "best stories");
   }
 });
 
@@ -164,9 +168,21 @@ app.get("/api/newstories", async (req, res) => {
     );
     res.json({ stories });
   } catch (error) {
-    res.status(500).send("Error fetching new stories");
+    console.error("Error fetching new stories:", error.message);
+    sendUpstreamError(res, "new stories");
   }
 });
+
+// Welcome API
+app.get("/api/welcome", (req, res) => {
+  res.json({ message: "welcome to our brand new app" });
+});
+
+// Greeting API
+app.get("/api/hey", heyHandler);
+
+// "hey ravinder" Greeting API
+app.get("/api/hey-ravinder", heyRavinderHandler);
 
 // Serve static files from the 'client/dist' directory
 app.use(express.static(path.join(__dirname, '../client/dist')));
