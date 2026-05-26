@@ -104,6 +104,7 @@ const cors = require("cors");
 const path = require("path");
 const dotenv = require("dotenv");
 const { sendUpstreamError } = require("./lib/upstreamError");
+const { heyHandler } = require("./lib/hey");
 
 dotenv.config();
 
@@ -175,6 +176,9 @@ app.get("/api/newstories", async (req, res) => {
 app.get("/api/welcome", (req, res) => {
   res.json({ message: "welcome to our brand new app" });
 });
+
+// Greeting API
+app.get("/api/hey", heyHandler);
 
 // Serve static files from the 'client/dist' directory
 app.use(express.static(path.join(__dirname, '../client/dist')));

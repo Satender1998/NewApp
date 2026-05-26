@@ -19,7 +19,7 @@ Create the handler and register the route.
 
 - [x] Task 1.1: Create `api/lib/hey.js` exporting `heyHandler(req, res)` that
       responds with `res.send("hey satender")`.
-- [ ] Task 1.2: Import `heyHandler` in `api/index.js` and register
+- [x] Task 1.2: Import `heyHandler` in `api/index.js` and register
       `app.get("/api/hey", heyHandler)` alongside the other `/api/*` routes
       (before the static-file and `*` catch-all handlers).
 
