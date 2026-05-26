@@ -25,7 +25,7 @@ Create the handler and register the route.
 
 ### Verification
 
-- [ ] App starts; `GET /api/hey` returns HTTP 200 with body `hey satender`.
+- [x] App starts; `GET /api/hey` returns HTTP 200 with body `hey satender`.
 
 ## Phase 2: Test & verify
 
@@ -33,14 +33,14 @@ Add a unit test and confirm the suite passes.
 
 ### Tasks
 
-- [ ] Task 2.1: Add `api/lib/hey.test.js` using `node:test` and a fake `res`
+- [x] Task 2.1: Add `api/lib/hey.test.js` using `node:test` and a fake `res`
       object (mirroring `upstreamError.test.js`) asserting the response body is
       `hey satender`.
-- [ ] Task 2.2: Run `npm test` and confirm all tests (new + existing) pass.
+- [x] Task 2.2: Run `npm test` and confirm all tests (new + existing) pass.
 
 ### Verification
 
-- [ ] `npm test` passes with the new test included.
+- [x] `npm test` passes with the new test included.
 
 ## Final Verification
 
