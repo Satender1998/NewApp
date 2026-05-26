@@ -14,6 +14,7 @@ Navigation hub for project context.
 
 - [x] [Loading & Error States for Story Views](./tracks/loading-errors_20260526/index.md) — `loading-errors_20260526`
 - [x] ["hey satender" Greeting Endpoint](./tracks/hey-endpoint_20260526/index.md) — `hey-endpoint_20260526`
+- [x] ["hey ravinder" Greeting Endpoint](./tracks/hey-ravinder_20260527/index.md) — `hey-ravinder_20260527`
 
 <!-- Auto-populated by /conductor:new-track -->
 
