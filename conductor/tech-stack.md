@@ -24,8 +24,9 @@
 - **dotenv** — environment configuration (`PORT`, defaults to 3001).
 - **nodemon** — dev auto-reload (`npm run dev`).
 
-The backend exposes `/api/topstories`, `/api/beststories`, `/api/newstories`, and
-`/api/welcome`, then serves the built client from `client/dist` for all other routes.
+The backend exposes `/api/topstories`, `/api/beststories`, `/api/newstories`,
+`/api/welcome`, and `/api/hey` (a plain-text greeting), then serves the built
+client from `client/dist` for all other routes.
 
 ## Data Source
 
