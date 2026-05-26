@@ -105,6 +105,7 @@ const path = require("path");
 const dotenv = require("dotenv");
 const { sendUpstreamError } = require("./lib/upstreamError");
 const { heyHandler } = require("./lib/hey");
+const { heyRavinderHandler } = require("./lib/hey-ravinder");
 
 dotenv.config();
 
@@ -179,6 +180,9 @@ app.get("/api/welcome", (req, res) => {
 
 // Greeting API
 app.get("/api/hey", heyHandler);
+
+// "hey ravinder" Greeting API
+app.get("/api/hey-ravinder", heyRavinderHandler);
 
 // Serve static files from the 'client/dist' directory
 app.use(express.static(path.join(__dirname, '../client/dist')));
