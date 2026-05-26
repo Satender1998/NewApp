@@ -1,0 +1,18 @@
+{
+  "id": "hey-endpoint_20260526",
+  "title": "\"hey satender\" Greeting Endpoint",
+  "type": "feature",
+  "status": "in_progress",
+  "created": "2026-05-26T00:00:00Z",
+  "updated": "2026-05-26T00:00:00Z",
+  "current_phase": 1,
+  "current_task": "1.1",
+  "phases": {
+    "total": 2,
+    "completed": 0
+  },
+  "tasks": {
+    "total": 4,
+    "completed": 0
+  }
+}
