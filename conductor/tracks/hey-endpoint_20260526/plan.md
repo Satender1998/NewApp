@@ -3,7 +3,7 @@
 **Track ID:** hey-endpoint_20260526
 **Spec:** [spec.md](./spec.md)
 **Created:** 2026-05-26
-**Status:** [ ] Not Started
+**Status:** [x] Complete
 
 ## Overview
 
@@ -44,10 +44,10 @@ Add a unit test and confirm the suite passes.
 
 ## Final Verification
 
-- [ ] All acceptance criteria met.
-- [ ] Tests passing.
-- [ ] Existing endpoints unaffected.
-- [ ] Ready for review.
+- [x] All acceptance criteria met.
+- [x] Tests passing.
+- [x] Existing endpoints unaffected.
+- [x] Ready for review.
 
 ---
 
