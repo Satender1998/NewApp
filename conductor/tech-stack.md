@@ -25,8 +25,9 @@
 - **nodemon** — dev auto-reload (`npm run dev`).
 
 The backend exposes `/api/topstories`, `/api/beststories`, `/api/newstories`,
-`/api/welcome`, and `/api/hey` (a plain-text greeting), then serves the built
-client from `client/dist` for all other routes.
+`/api/welcome`, `/api/hey` (a plain-text greeting), and `/api/hey-ravinder`
+(logs "hey ravinder" to the server console and returns it as JSON), then serves
+the built client from `client/dist` for all other routes.
 
 ## Data Source
 
